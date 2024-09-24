@@ -35,6 +35,26 @@ function addNotification(var1,var2){
     return historySec.insertBefore(notificationN,historySec.firstChild)
 }
 
+// function validateAndDonate(amount,donation,amountId,donationId,locationDetails){
+//     if(amount<0 || isNaN(amount) || amount>balance){
+//         alert('Wrong digit or input. Please provide the right digit')
+//         document.getElementById(amountId).value=''
+//         return
+//     }
+//     else{
+//         balance-=amount;
+//         document.getElementById('balance').innerText=balance
+
+//         donation+=amount;
+//         document.getElementById(donationId).innerText=donation
+
+//         newModal.showModal();
+//         addNotification(amount,locationDetails)
+//     }
+//     document.getElementById(amountId).value=''
+// }
+
+
 function buttonToggle(id1,id2){
     document.getElementById('donateSec').classList.add('hidden')
     document.getElementById('historySec').classList.add('hidden')
@@ -42,10 +62,10 @@ function buttonToggle(id1,id2){
     document.getElementById(id1).classList.remove('hidden')
 
     //-----------------Background Color
-    document.getElementById('donateBtn').classList.remove('bg-primary','font-bold')
-    document.getElementById('historyBtn').classList.remove('bg-primary','font-bold')
+    document.getElementById('donateBtn').classList.remove('bg-primary','font-bold','hover:bg-primary')
+    document.getElementById('historyBtn').classList.remove('bg-primary','font-bold','hover:bg-primary')
 
-    document.getElementById(id2).classList.add('bg-primary','font-bold')
+    document.getElementById(id2).classList.add('bg-primary','font-bold','hover:bg-primary')
 
 }
 
@@ -99,6 +119,7 @@ document.getElementById('feniBtn').addEventListener('click',function(){
         newModal.showModal();
     }
     document.getElementById('feniAmount').value=''
+
 
     //History Create
     addNotification(feniAmount,location2)

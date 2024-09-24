@@ -26,12 +26,37 @@
     </script>
     <title>Blog</title>
 </head>
-<body class="bg-navBg py-12">
+<body class="bg-navBg py-8">
 
     <header class="w-11/12 mx-auto pb-12">
-        <h1 class="text-3xl text-center font-bold">Blog of DOM Brief</h1>
+        <header class="sticky top-0 z-10 backdrop-filter backdrop-blur-lg">
+            <div id="navSec" class="bg-navBg">
+             <div class="flex flex-col items-start gap-3 bg-navBg lg:flex-row navbar bg-base-100 p-8 w-11/12 mx-auto">
+                 <div class="navbar-start">
+                     <a href="./index.html">
+                         <button class="btn btn-md bg-primary text-lg text-black">Home</button>
+                     </a>
+                     
+                 </div>
+                 <div class="navbar-center flex justify-center items-center gap-2">
+                   <img src="./assets/logo.png" alt="">
+                   <h1 class="text-2xl font-bold lg:flex gap-1">
+                     Donate Bangladesh
+                   </h1>
+                 </div>
+                 <div class="navbar-end font-bold">
+                     
+                     <p class="text-lg text-bdtCol flex gap-1">
+                         FAQ?
+                     </p>
+                 </div>
+             </div>
+            </div>
+         </header>
+        
     </header>
     <main class="w-9/12 mx-auto ">
+        <h1 class="text-3xl text-center font-bold pb-6">Blog of DOM Brief</h1>
         <div class="contentSec" id="contentSec">
             <div class="bg-blogCol p-4 border-2 rounded-lg space-y-3 my-4">
                 <div class="flex justify-between items-center">
@@ -138,5 +163,6 @@
     </main>
     
     <script src="./blog.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
