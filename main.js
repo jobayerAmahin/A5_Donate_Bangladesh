@@ -48,6 +48,7 @@ function buttonToggle(id1,id2){
     document.getElementById(id2).classList.add('bg-primary','font-bold')
 
 }
+
 //---------------------------------------------------Execute Section
 
 //----Noakhali Flood

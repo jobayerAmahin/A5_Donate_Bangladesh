@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Tailwind and Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Tailwind Customization -->
+    <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    primary:'rgb(180, 244, 97)',
+                    bdtCol:'rgba(17, 17, 17, 0.7)',
+                    navBg:'rgb(249, 247, 243)',
+                    blogCol:'rgb(248,222,203)'
+                  }
+                }
+              }
+            }
+    </script>
+    <title>Blog</title>
+</head>
+<body class="bg-navBg py-12">
+
+    <header class="w-11/12 mx-auto pb-12">
+        <h1 class="text-3xl text-center font-bold">Blog of DOM Brief</h1>
+    </header>
+    <main class="w-9/12 mx-auto ">
+        <div class="contentSec" id="contentSec">
+            <div class="bg-blogCol p-4 border-2 rounded-lg space-y-3 my-4">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-lg font-bold">What is the Document Object Model (DOM)?</h2>
+                    <button id="down1" class="flex gap-2 items-center">
+                        <p>Show</p>
+                        <i class="fa-regular fa-circle-down"></i>
+                    </button>
+                </div>
+                <div class="flex flex-col gap-4 justify-end hidden" id="blog1">
+                    <h3>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page. A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an object-oriented representation of the web page, it can be modified with a scripting language such as JavaScript.</h3>
+                    <button id="up1">
+                        <i class="fa-regular fa-circle-up"></i>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="bg-blogCol p-4 border-2 rounded-lg space-y-3 my-4">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-lg font-bold">How do you select an element from the DOM?</h2>
+                        <button id="down2" class="flex gap-2 items-center">
+                            <p>Show</p>
+                            <i class="fa-regular fa-circle-down"></i>
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-end hidden" id="blog2">
+                        <h2>Element can be selected by following methods:
+                            <ul class="font-bold">
+                                <li>getElementsByName()</li>
+                                <li>getElementsByTagName()</li>
+                                <li>getElementsByClassName()</li>
+                                <li>getElementById()</li>
+                                <li>querySelector()</li>
+                                <li>querySelectorAll()</li>
+                            </ul>
+                        </h2>
+                        <button id="up2">
+                            <i class="fa-regular fa-circle-up"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-blogCol p-4 border-2 rounded-lg space-y-3 my-4">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-lg font-bold">What is event delegation in the context of the DOM, and why is it useful?</h2>
+                        <button id="down3" class="flex gap-2 items-center">
+                            <p>Show</p>
+                            <i class="fa-regular fa-circle-down"></i>
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-end hidden" id="blog3">
+                        <h3>Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.
+                            <br>
+                            When it is possible, you can have a single event handler on the document that will handle all the events of a particular type. By doing this, you gain the following benefits:
+                            <br>
+                            <ul>
+                                <li>* Less memory usage, better performance.</li>
+                                <li>* Less time is required to set up event handlers on the page.</li>
+                                <li>* The document object is available immediately. As long as the element is rendered, it can start functioning correctly without delay. You don’t need to wait for the DOMContentLoaded or load events.</li>
+                            </ul>
+                        </h3>
+                        <button id="up3">
+                            <i class="fa-regular fa-circle-up"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-blogCol p-4 border-2 rounded-lg space-y-3 my-4">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-lg font-bold">How do you manipulate an element's attributes and styles using the DOM?</h2>
+                        <button id="down4" class="flex gap-2 items-center">
+                            <p>Show</p>
+                            <i class="fa-regular fa-circle-down"></i>
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-end hidden" id="blog4">
+                        <h3>For manipulating attributes methods are:
+                            <ul class="font-bold">
+                                <li>element.hasAttribute();</li>
+                                <li>element.getAttribute();</li>
+                                <li>element.setAttribute();</li>
+                                <li>element.removeAttribute();</li>
+                            </ul>
+                            <br>For styles(example):
+                            <ul class="font-bold">
+                                <li>element.style.borderRadius = '50%';</li>
+                                <li>element.style.display = 'flex';</li>
+                                <li>element.style.justifyContent = 'center';</li>
+                                <li>element.style.alignItems = 'center';</li> 
+                            </ul>
+                        </h3>
+                        <button id="up4">
+                            <i class="fa-regular fa-circle-up"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <script src="./blog.js"></script>
+</body>
+</html>
