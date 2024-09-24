@@ -77,7 +77,7 @@ document.getElementById('noakhaliBtn').addEventListener('click',function(){
     const noakhaliAmount=returnInputValue('noakhaliAmount')
     let noakhaliDonate=returnTextValue('noakhaliDonate')
 
-    if(noakhaliAmount<0 || isNaN(noakhaliAmount) || noakhaliAmount>balance){
+    if(noakhaliAmount<=0 || isNaN(noakhaliAmount) || noakhaliAmount>balance){
         alert('Wrong digit or input. Please provide the right digit')
         document.getElementById('noakhaliAmount').value=''
         return
@@ -104,7 +104,7 @@ document.getElementById('feniBtn').addEventListener('click',function(){
     const feniAmount=returnInputValue('feniAmount')
     let feniDonate=returnTextValue('feniDonate')
 
-    if(feniAmount<0 || isNaN(feniAmount) || feniAmount>balance){
+    if(feniAmount<=0 || isNaN(feniAmount) || feniAmount>balance){
         alert('Wrong digit or input. Please provide the right digit')
         document.getElementById('feniAmount').value=''
         return
@@ -131,7 +131,7 @@ document.getElementById('quotaBtn').addEventListener('click',function(){
     const quotaAmount=returnInputValue('quotaAmount')
     let quotaDonate=returnTextValue('quotaDonate')
 
-    if(quotaAmount<0 || isNaN(quotaAmount) || quotaAmount>balance){
+    if(quotaAmount<=0 || isNaN(quotaAmount) || quotaAmount>balance){
         alert('Wrong digit or input. Please provide the right digit')
         document.getElementById('quotaAmount').value=''
         return
